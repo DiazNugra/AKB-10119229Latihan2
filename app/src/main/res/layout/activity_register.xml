@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/registerEditTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/separator"
+        android:hint="@string/username"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/registerEditTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:layout_below="@id/registerEditTextUsername"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/separator">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/registerEditTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/registerEditTextEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Phone"
+        android:backgroundTint="@color/separator">
+
+    </EditText>
+
+    <RadioButton
+        android:id="@+id/radioButtonGenderMale"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/registerEditTextPhone"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Male"
+        android:textSize="18sp"
+        android:textColor="@color/separator">
+
+    </RadioButton>
+
+    <RadioButton
+        android:id="@+id/radioButtonGenderFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/radioButtonGenderMale"
+        android:layout_below="@id/registerEditTextPhone"
+        android:text="Female"
+        android:textSize="18sp"
+        android:textColor="@color/separator">
+
+    </RadioButton>
+
+    <Spinner
+        android:id="@+id/spinner_bloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioButtonGenderMale"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/separator"
+        >
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spinner_reshus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioButtonGenderMale"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/spinner_bloodType"
+        android:textColor="@color/separator"
+        >
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/registerEditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner_bloodType"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:textSize="18dp"
+        android:backgroundTint="@color/separator">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/registerEditTextRetypePassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/registerEditTextPassword"
+        android:layout_marginTop="10dp"
+        android:hint="@string/retypePass"
+        android:textSize="18dp"
+        android:backgroundTint="@color/separator">
+
+    </EditText>
+
+    <RadioButton
+        android:id="@+id/radioButtonPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/registerEditTextRetypePassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/personal"
+        android:textSize="18sp"
+        android:textColor="@color/separator">
+
+    </RadioButton>
+
+    <RadioButton
+        android:id="@+id/radioButtonOrg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/registerEditTextRetypePassword"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/radioButtonPersonal"
+        android:text="@string/org"
+        android:textSize="18sp"
+        android:textColor="@color/separator">
+
+    </RadioButton>
+
+    <Spinner
+        android:id="@+id/spinner_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioButtonPersonal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/separator">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/editTextRegisterHomeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/spinner_job"
+        android:hint="@string/homeAdd"
+        android:textSize="18dp"
+        android:backgroundTint="@color/separator"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextRegisterDefaultLocation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextRegisterHomeAddress"
+        android:hint="@string/defaultLoc"
+        android:backgroundTint="@color/separator"
+        android:textSize="18dp"
+        >
+
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/termAndCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRegisterDefaultLocation"
+        android:text="Aggree With Terms and Condition"
+        android:layout_marginTop="10dp"
+        >
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/termAndCondition"
+        android:text="Register"
+        android:textColor="@color/lightBlue"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        >
+
+    </Button>
+
+
+</RelativeLayout>

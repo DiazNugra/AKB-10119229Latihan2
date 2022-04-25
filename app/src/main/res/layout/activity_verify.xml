@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifyActivity"
+    android:padding="20dp"
+    android:background="@color/lightBlue">
+
+    <TextView
+        android:id="@+id/almostThereTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/almostThere"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/almostThereDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/almostThereDesc"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/almostThereTitle"
+        android:lineSpacingExtra="1dp"
+        android:gravity="center"
+        android:textColor="@color/white">
+        
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonVerify"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/almostThereDesc"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
+        android:text="Verify"
+        android:textColor="@color/lightBlue"
+        android:textSize="24sp">
+
+    </Button>
+
+
+</RelativeLayout>

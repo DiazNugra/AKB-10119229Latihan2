@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">10119229Latihan2</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Doesn\'t Have Account? <b>Register</b></string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="bloodType">Blood Type</string>
+    <string name="rhesus">Rhesus</string>
+    <string name="retypePass">Retype Password</string>
+    <string name="personal">Personal</string>
+    <string name="org">Organization</string>
+    <string name="job">Job</string>
+    <string name="homeAdd">Home Address</string>
+    <string name="defaultLoc">Default Location</string>
+    <string name="terAndCond">Aggree With Term And Condition</string>
+    <string name="almostThere">Almost There</string>
+    <string name="almostThereDesc">Thank You For Registering With Us. One More Step, you need to check email to active your account</string>
+    <string name="resend">Doesn\'t get the code? <b>Resend</b></string>
+    <string name="nama">Diaz Maulidzan N</string>
+    <string name="goldar">Blood Type : B</string>
+
+
+    //dropdown item
+    <string-array name="itemselectBloodType">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+    </string-array>
+
+    <string-array name="rehsus">
+        <item>Reshus</item>
+        <item>Positif</item>
+        <item>Negatif</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>Job</item>
+        <item>Freelance</item>
+    </string-array>
+
+</resources>

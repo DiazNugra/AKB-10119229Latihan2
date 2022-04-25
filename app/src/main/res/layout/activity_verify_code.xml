@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifyCodeActivity"
+    android:background="@color/lightBlue"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/verifyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Account"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/verifyDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have send verification code to your email"
+        android:layout_below="@id/verifyTitle"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextVerifCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter verification code here"
+        android:layout_below="@+id/verifyDesc"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextVerifCode"
+        android:layout_marginTop="5dp"
+        android:text="Send"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/lightBlue">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSend"
+        android:text="@string/resend"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp">
+
+    </TextView>
+
+</RelativeLayout>
