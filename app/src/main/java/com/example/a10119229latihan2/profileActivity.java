@@ -1,5 +1,8 @@
 package com.example.a10119229latihan2;
-
+//Nim                   : 10119229
+//Nama                  : Diaz Maulidzan N
+//Kelas                 : IF6
+//Tanggal Pengerjaan    : 25 april 2022
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
